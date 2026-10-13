@@ -37,7 +37,9 @@ jobs:
           tests-history-cache
 
     - name: Install VS code
-      run: brew install --cask visual-studio-code
+      run: | 
+        brew install --cask visual-studio-code 
+        test -x "/Applications/Visual Studio Code.app/Contents/MacOS/Electron"
 
     - name: Set up JDK
       uses: actions/setup-java@v5
