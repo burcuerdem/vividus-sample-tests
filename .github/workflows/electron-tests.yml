@@ -39,7 +39,7 @@ jobs:
     - name: Install VS code
       run: | 
         brew install --cask visual-studio-code 
-        test -x "/Applications/Visual Studio Code.app/Contents/MacOS/Electron"
+        ls -la "/Applications/Visual Studio Code.app/Contents/MacOS/"
 
     - name: Set up JDK
       uses: actions/setup-java@v5
