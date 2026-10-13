@@ -15,3 +15,6 @@ dependencies {
     implementation('org.vividus:vividus-plugin-mobile-app')
     implementation('org.vividus:vividus-mcp-server')
 }
+configurations.configureEach {
+    resolutionStrategy.force 'com.github.pazone:ashot:12cfadadac'
+}
